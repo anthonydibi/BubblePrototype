@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -23,14 +24,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.bubbleprototype.R;
+import com.example.bubbleprototype.data.model.Availability;
+import com.example.bubbleprototype.data.model.BubbleApplication;
 import com.example.bubbleprototype.ui.login.LoginViewModel;
 import com.example.bubbleprototype.ui.login.LoginViewModelFactory;
 import com.example.bubbleprototype.databinding.ActivityLoginBinding;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
     private ActivityLoginBinding binding;
+    private BubbleApplication app;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,6 +53,16 @@ public class LoginActivity extends AppCompatActivity {
         final EditText passwordEditText = binding.password;
         final Button loginButton = binding.login;
         final ProgressBar loadingProgressBar = binding.loading;
+        app = ((BubbleApplication) this.getApplication());
+        app.initApplication(); //initialize the fields in BubbleApplication to their default values
+//        int[] avail1 = {0, 1, 1};
+//        int[] avail2 = {1, 1, 0};
+//        List<int[]> avails = new ArrayList<int[]>();
+//        avails.add(avail1);
+//        avails.add(avail2);
+//        usernameEditText.setText(Float.toString(Availability.merge(avails)[1]));
+
+
 
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
             @Override
