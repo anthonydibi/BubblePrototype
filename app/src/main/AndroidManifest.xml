@@ -3,6 +3,7 @@
     package="com.example.bubbleprototype">
 
     <application
+        android:name=".data.model.BubbleApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,11 +11,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BubblePrototype">
         <activity
+<<<<<<< HEAD
             android:name=".PlanInfo"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
+=======
+            android:name=".ui.login.LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+>>>>>>> e96a65ba6d8d29f8582808b04726676563af8887
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
