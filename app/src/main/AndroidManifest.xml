@@ -11,6 +11,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BubblePrototype">
         <activity
+            android:name=".data.todo.TodoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.ui.TodoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TestActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.BubblePrototype.NoActionBar" />
+        <activity
             android:name=".ui.login.LoginActivity"
             android:exported="true"
             android:label="@string/app_name">

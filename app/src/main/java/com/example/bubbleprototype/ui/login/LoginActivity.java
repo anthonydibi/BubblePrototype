@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -26,6 +27,8 @@ import android.widget.Toast;
 import com.example.bubbleprototype.R;
 import com.example.bubbleprototype.data.model.Availability;
 import com.example.bubbleprototype.data.model.BubbleApplication;
+import com.example.bubbleprototype.data.model.Circle;
+import com.example.bubbleprototype.home.HomeActivity;
 import com.example.bubbleprototype.ui.login.LoginViewModel;
 import com.example.bubbleprototype.ui.login.LoginViewModelFactory;
 import com.example.bubbleprototype.databinding.ActivityLoginBinding;
@@ -55,6 +58,8 @@ public class LoginActivity extends AppCompatActivity {
         final ProgressBar loadingProgressBar = binding.loading;
         app = ((BubbleApplication) this.getApplication());
         app.initApplication(); //initialize the fields in BubbleApplication to their default values
+        app.circles.add(new Circle("testcircle1"));
+        app.circles.add(new Circle("testcircle2"));
 //        int[] avail1 = {0, 1, 1};
 //        int[] avail2 = {1, 1, 0};
 //        List<int[]> avails = new ArrayList<int[]>();
@@ -134,9 +139,8 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadingProgressBar.setVisibility(View.VISIBLE);
-                loginViewModel.login(usernameEditText.getText().toString(),
-                        passwordEditText.getText().toString());
+               Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+               startActivity(intent);
             }
         });
     }
