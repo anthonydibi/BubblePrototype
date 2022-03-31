@@ -14,9 +14,6 @@
             android:name=".data.todo.TodoActivity"
             android:exported="false" />
         <activity
-            android:name=".home.ui.TodoActivity"
-            android:exported="false" />
-        <activity
             android:name=".TestActivity2"
             android:exported="false" />
         <activity
@@ -28,13 +25,8 @@
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.BubblePrototype.NoActionBar" />
         <activity
-<<<<<<< HEAD
             android:name=".PlanInfo"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-=======
         <activity
             android:name=".ui.login.LoginActivity"
             android:exported="true"

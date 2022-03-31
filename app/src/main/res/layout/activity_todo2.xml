@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".data.todo.TodoActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/eventsview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="0dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

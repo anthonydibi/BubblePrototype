@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
     <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
-        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp">
+        <RelativeLayout android:layout_width="match_parent" android:id="@+id/chipView" android:layout_height="wrap_content" android:padding="8dp">
             <TextView android:id="@+id/chipTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Placeholder" android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" android:textColor="#000000"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

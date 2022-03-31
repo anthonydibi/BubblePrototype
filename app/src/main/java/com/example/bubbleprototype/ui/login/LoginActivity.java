@@ -28,6 +28,7 @@ import com.example.bubbleprototype.R;
 import com.example.bubbleprototype.data.model.Availability;
 import com.example.bubbleprototype.data.model.BubbleApplication;
 import com.example.bubbleprototype.data.model.Circle;
+import com.example.bubbleprototype.data.model.Event;
 import com.example.bubbleprototype.home.HomeActivity;
 import com.example.bubbleprototype.ui.login.LoginViewModel;
 import com.example.bubbleprototype.ui.login.LoginViewModelFactory;
@@ -59,7 +60,9 @@ public class LoginActivity extends AppCompatActivity {
         app = ((BubbleApplication) this.getApplication());
         app.initApplication(); //initialize the fields in BubbleApplication to their default values
         app.circles.add(new Circle("testcircle1"));
+        app.circles.get(0).events.add(new Event("Test plannnn", "nine o clocky", "here"));
         app.circles.add(new Circle("testcircle2"));
+        app.circles.get(1).events.add(new Event("Test plan2", "ten o clock", "other place"));
 //        int[] avail1 = {0, 1, 1};
 //        int[] avail2 = {1, 1, 0};
 //        List<int[]> avails = new ArrayList<int[]>();

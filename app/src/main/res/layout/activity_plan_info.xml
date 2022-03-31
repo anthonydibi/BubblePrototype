@@ -133,11 +133,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="#9C27B0"
-        android:padding="15"
+        android:padding="15dp"
         android:text="8am - 10am Dinner at Panera"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="18"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="108dp" />
