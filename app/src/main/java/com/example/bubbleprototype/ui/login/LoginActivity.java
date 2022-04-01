@@ -58,11 +58,7 @@ public class LoginActivity extends AppCompatActivity {
         final Button loginButton = binding.login;
         final ProgressBar loadingProgressBar = binding.loading;
         app = ((BubbleApplication) this.getApplication());
-        app.initApplication(); //initialize the fields in BubbleApplication to their default values
-        app.circles.add(new Circle("testcircle1"));
-        app.circles.get(0).events.add(new Event("Test plannnn", "nine o clocky", "here"));
-        app.circles.add(new Circle("testcircle2"));
-        app.circles.get(1).events.add(new Event("Test plan2", "ten o clock", "other place"));
+        //app.initApplication(); //initialize the fields in BubbleApplication to their default value
 //        int[] avail1 = {0, 1, 1};
 //        int[] avail2 = {1, 1, 0};
 //        List<int[]> avails = new ArrayList<int[]>();

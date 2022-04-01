@@ -33,8 +33,10 @@ public class TodoActivity extends AppCompatActivity implements RecyclerViewActio
         this.currCircle = intent.getStringExtra("circle");
         if(this.currCircle == null){
             this.currCircle = "";
+            findViewById(R.id.colabButton).setVisibility(View.GONE);
+            findViewById(R.id.createEventButton).setVisibility(View.GONE); //hide buttons if we arent in a circle
         }
-        System.out.println("Circle: " + this.currCircle);
+        //System.out.println("Circle: " + this.currCircle);
         application = (BubbleApplication) getApplication();
 
         recyclerView = (RecyclerView) findViewById(R.id.eventsview);
