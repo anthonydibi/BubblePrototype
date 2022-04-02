@@ -130,7 +130,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block2"
@@ -140,7 +141,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block3"
@@ -150,7 +152,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block4"
@@ -160,7 +163,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block5"
@@ -170,7 +174,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block6"
@@ -180,7 +185,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block7"
@@ -190,7 +196,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
         </TableRow>
 
         <TableRow
@@ -217,7 +224,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block9"
@@ -227,7 +235,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block10"
@@ -237,7 +246,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block11"
@@ -247,7 +257,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block12"
@@ -257,7 +268,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block13"
@@ -267,7 +279,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block14"
@@ -277,7 +290,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
         </TableRow>
 
         <TableRow
@@ -304,7 +318,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block16"
@@ -314,7 +329,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block17"
@@ -324,7 +340,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block18"
@@ -334,7 +351,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block19"
@@ -344,7 +362,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block20"
@@ -354,7 +373,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block21"
@@ -364,7 +384,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
         </TableRow>
 
         <TableRow
@@ -391,7 +412,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block23"
@@ -401,7 +423,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block24"
@@ -411,7 +434,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block25"
@@ -421,7 +445,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block26"
@@ -431,7 +456,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block27"
@@ -441,7 +467,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block28"
@@ -451,7 +478,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
         </TableRow>
 
         <TableRow
@@ -478,7 +506,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block30"
@@ -488,7 +517,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block31"
@@ -498,7 +528,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block32"
@@ -508,7 +539,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block33"
@@ -518,7 +550,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block34"
@@ -528,7 +561,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
 
             <TextView
                 android:id="@+id/block35"
@@ -538,7 +572,8 @@
                 android:background="@drawable/grey_blocks"
                 android:paddingLeft="6dp"
                 android:paddingRight="6dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:clickable="true"/>
         </TableRow>
 
     </TableLayout>
