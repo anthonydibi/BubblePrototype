@@ -11,11 +11,17 @@ public class BubbleApplication extends Application {
     public Availability avail; //the user's availability - should be modified by the edit availability screen
     public List<Integer> friends; //indices of any friends the user has added - create circle should pull from this, and add friends should add to this
 
-    public void initApplication(){
+    @Override
+    public void onCreate() { //called when app starts
+        super.onCreate();
         circles = new ArrayList<Circle>();
         dummyUsers = new ArrayList<User>();
         avail = new Availability();
         friends = new ArrayList<Integer>();
+        circles.add(new Circle("testcircle1"));
+        circles.get(0).events.add(new Event("Test plannnn", "nine o clocky", "here"));
+        circles.add(new Circle("testcircle2"));
+        circles.get(1).events.add(new Event("Test plan2", "ten o clock", "other place"));
         initializeDummyUsers();
     }
 

@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
+        <entry key="..\:/Users/danbl/AndroidStudioProjects/BubblePrototype/app/src/main/res/layout/activity_plan_info.xml" value="0.205" />
+=======
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.1921875" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.3365036231884058" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3365036231884058" />
@@ -18,6 +21,7 @@
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.1921875" />
         <entry key="app/src/main/res/menu/home.xml" value="0.1921875" />
         <entry key="app/src/main/res/menu/navigation_menu.xml" value="0.1921875" />
+>>>>>>> e96a65ba6d8d29f8582808b04726676563af8887
       </map>
     </option>
   </component>

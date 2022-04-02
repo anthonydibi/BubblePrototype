@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Colab {
-    public List<String> chat;
-    public List<Bubble> bubbles;
+    public ArrayList<String> chat;
+    public ArrayList<Bubble> bubbles;
 
     public Colab(){
         this.chat = new ArrayList<String>();
