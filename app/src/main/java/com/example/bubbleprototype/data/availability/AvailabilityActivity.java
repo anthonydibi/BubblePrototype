@@ -28,18 +28,18 @@ public class AvailabilityActivity extends AppCompatActivity {
         for (int i = 0; i < 35; i++) {
             final TextView blocks = slots.findViewWithTag("" + (i + 1) + "");
             final int idx = i;
+
             blocks.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Drawable block = blocks.getBackground();
+                    Drawable block = view.getBackground();
                     Drawable isGreen = ResourcesCompat.getDrawable(getResources(), R.drawable.green_blocks, null);
 
-                    if(block.equals(isGreen)) {
-                        blocks.setBackgroundColor(R.drawable.grey_blocks);
+                    if (block.getConstantState().equals(isGreen.getConstantState())) {
+                        view.setBackgroundResource(R.drawable.grey_blocks);
                         application.avail.setUserAvail(idx, 0);
-                    }
-                    else{
-                        blocks.setBackgroundColor(R.drawable.green_blocks);
+                    } else {
+                        view.setBackgroundResource(R.drawable.green_blocks);
                         application.avail.setUserAvail(idx, 1);
                     }
                 }

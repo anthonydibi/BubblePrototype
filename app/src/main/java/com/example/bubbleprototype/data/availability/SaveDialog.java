@@ -1,18 +1,19 @@
 package com.example.bubbleprototype.data.availability;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
-import com.example.bubbleprototype.data.todo.TodoActivity;
 import com.example.bubbleprototype.home.HomeActivity;
 
+
 public class SaveDialog extends AppCompatDialogFragment {
+    @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState){
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -23,8 +24,8 @@ public class SaveDialog extends AppCompatDialogFragment {
                 .setPositiveButton("SAVE", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Activity currentActivity = getActivity();
-                        currentActivity.finish();
+                        Intent intent = new Intent(getActivity(), HomeActivity.class);
+                        startActivity(intent);
                     }
                 })
                 .setNegativeButton("EDIT", new DialogInterface.OnClickListener() {
@@ -37,3 +38,4 @@ public class SaveDialog extends AppCompatDialogFragment {
         return builder.create();
     }
 }
+

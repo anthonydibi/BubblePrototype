@@ -18,6 +18,8 @@ public class Availability {
         this.userAvail[idx] = val;
     }
 
+    public int[] getUserAvail() {return this.userAvail;}
+
     public static float[] merge(List<int[]> avails) {
         int firstLength = avails.get(0).length;
         for (int[] ls : avails) {
