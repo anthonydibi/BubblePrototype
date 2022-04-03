@@ -20,4 +20,23 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <!-- Strings related to months-->
+    <string name="m1">April</string>
+
+    <!-- Strings related to day and date -->
+    <string name="sun">Sun\n3</string>
+    <string name="mon">Mon\n4</string>
+    <string name="tue">Tue\n5</string>
+    <string name="wed">Wed\n6</string>
+    <string name="thu">Thu\n7</string>
+    <string name="fri">Fri\n8</string>
+    <string name="sat">Sat\n9</string>
+
+    <!-- Strings related to times-->
+    <string name="time1">8AM - 11AM</string>
+    <string name="time2">11AM - 2PM</string>
+    <string name="time3">2PM - 5PM</string>
+    <string name="time4">5PM - 8PM</string>
+    <string name="time5">8PM - 11PM</string>
 </resources>

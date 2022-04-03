@@ -9,7 +9,16 @@ public class Availability {
 
     public Availability(){
         this.userAvail = new int[35];
+        for(int i = 0; i < 35;  i++){
+            this.userAvail[i] = 0;
+        }
     }
+
+    public void setUserAvail(int idx, int val){
+        this.userAvail[idx] = val;
+    }
+
+    public int[] getUserAvail() {return this.userAvail;}
 
     public static float[] merge(List<int[]> avails) {
         int firstLength = avails.get(0).length;
