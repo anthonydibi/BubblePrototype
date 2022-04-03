@@ -31,12 +31,25 @@
             android:name=".ui.login.LoginActivity"
             android:exported="true"
             android:label="@string/app_name">
->>>>>>> e96a65ba6d8d29f8582808b04726676563af8887
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".BubbleColab"
+            android:parentActivityName=".data.todo.TodoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".data.todo.TodoActivity"/>
+        </activity>
+        <activity
+            android:name=".Chat"
+            android:parentActivityName=".BubbleColab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BubbleColab"/>
         </activity>
     </application>
 

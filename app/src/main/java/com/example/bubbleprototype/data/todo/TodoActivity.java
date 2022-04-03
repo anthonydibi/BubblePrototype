@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.bubbleprototype.BubbleColab;
+import com.example.bubbleprototype.Chat;
 import com.example.bubbleprototype.R;
 import com.example.bubbleprototype.RecyclerViewActionListener;
 import com.example.bubbleprototype.TagsAdapter;
@@ -24,6 +26,7 @@ public class TodoActivity extends AppCompatActivity implements RecyclerViewActio
     private BubbleApplication application;
     private RecyclerView recyclerView;
     private String currCircle;
+    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,5 +108,14 @@ public class TodoActivity extends AppCompatActivity implements RecyclerViewActio
                 startActivity(intent);
                 break;
         }
+    }
+
+    public void startColab(View view) {
+        Intent intent2 = new Intent(this, BubbleColab.class);
+//        Intent intent3 = getIntent();
+//        String message = intent3.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String message = currCircle;
+        intent2.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent2);
     }
 }
