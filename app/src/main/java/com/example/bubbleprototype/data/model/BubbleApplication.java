@@ -10,6 +10,7 @@ public class BubbleApplication extends Application {
     public List<User> dummyUsers; //a bunch of fake users that are hardcoded with names/availabilities
     public Availability avail; //the user's availability - should be modified by the edit availability screen
     public List<Integer> friends; //indices of any friends the user has added - create circle should pull from this, and add friends should add to this
+    public String curCircle;
 
     @Override
     public void onCreate() { //called when app starts
@@ -23,6 +24,7 @@ public class BubbleApplication extends Application {
         circles.add(new Circle("testcircle2"));
         circles.get(1).events.add(new Event("Test plan2", "ten o clock", "other place"));
         initializeDummyUsers();
+        curCircle = "";
     }
 
     private void initializeDummyUsers(){
