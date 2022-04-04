@@ -11,6 +11,7 @@ public class BubbleApplication extends Application {
     public Availability avail; //the user's availability - should be modified by the edit availability screen
     public ArrayList<Integer> friends; //indices of any friends the user has added - create circle should pull from this, and add friends should add to this
     public String curCircle;
+    public String curEventTitle;
 
     @Override
     public void onCreate() { //called when app starts

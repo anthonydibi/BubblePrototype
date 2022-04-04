@@ -104,6 +104,7 @@ public class TodoActivity extends AppCompatActivity implements RecyclerViewActio
                 Intent intent = new Intent(this, PlanInfo.class);
                 intent.putExtra("circle", currCircle);
                 intent.putExtra("eventTitle", text);
+                application.curEventTitle = text;
                 startActivity(intent);
                 break;
         }
