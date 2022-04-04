@@ -49,7 +49,6 @@ public class Chat extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
 
         //action bar title
-        actionBar.setTitle("Chat: " + intent.getStringExtra(BubbleColab.EXTRA_MESSAGE));
 //        actionBar.setTitle("Colab: " + intent.getStringExtra("circle"));
         // action bar see icons
         actionBar.setDisplayUseLogoEnabled(true);
@@ -59,6 +58,7 @@ public class Chat extends AppCompatActivity {
 
         //get reference to the global app data
         app = ((BubbleApplication) this.getApplication());
+        actionBar.setTitle("Chat: " + app.curCircle);
         for (int i = 0; i < app.circles.size(); i++) {
             if (app.curCircle.equals(app.circles.get(i).name)) {
                 testcircle = app.circles.get(i);
@@ -67,7 +67,7 @@ public class Chat extends AppCompatActivity {
         //setup adapter for recycler view
         recyclerView = findViewById(R.id.recyclerchat);
         layoutManager = new LinearLayoutManager(this);
-        adapter = new ChatAdapter(app.circles.get(0).colab.chat);
+        adapter = new ChatAdapter(app.getCircle(app.curCircle).colab.chat);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
     }

@@ -14,6 +14,7 @@ import com.example.bubbleprototype.TagsAdapter;
 import com.example.bubbleprototype.data.availability.ViewAvailabilityActivity;
 import com.example.bubbleprototype.data.model.BubbleApplication;
 import com.example.bubbleprototype.data.model.Circle;
+import com.example.bubbleprototype.home.HomeActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -37,15 +38,15 @@ public class TodoActivity extends AppCompatActivity implements RecyclerViewActio
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_todo2);
         Intent intent = this.getIntent();
-        this.currCircle = intent.getStringExtra("circle");
-        if(this.currCircle == null){
+        //System.out.println("Circle: " + this.currCircle);
+        application = (BubbleApplication) getApplication();
+        this.currCircle = application.curCircle;
+        if(application.curCircle == null){
             this.currCircle = "";
             findViewById(R.id.colabButton).setVisibility(View.GONE);
             findViewById(R.id.createEventButton).setVisibility(View.GONE); //hide buttons if we arent in a circle
+            findViewById(R.id.viewAvailButton).setVisibility(View.GONE);
         }
-        //System.out.println("Circle: " + this.currCircle);
-        application = (BubbleApplication) getApplication();
-        application.curCircle = this.currCircle;
         recyclerView = (RecyclerView) findViewById(R.id.eventsview);
         recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setHasFixedSize(false);
@@ -83,7 +84,9 @@ public class TodoActivity extends AppCompatActivity implements RecyclerViewActio
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                finish();
+                Intent intent = new Intent(TodoActivity.this, HomeActivity.class);
+                application.curCircle = null;
+                startActivity(intent);
                 return true;
         }
 
