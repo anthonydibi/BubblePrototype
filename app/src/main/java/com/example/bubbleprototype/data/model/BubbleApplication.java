@@ -24,16 +24,32 @@ public class BubbleApplication extends Application {
         Circle testCircle = new Circle("Test circle");
         testCircle.events.add(new Event("Test event", "9:30pm", "Some place"));
         circles.add(testCircle);
+        testCircle.members.add(0);
+        testCircle.members.add(1);
+        testCircle.members.add(2);
         curCircle = "";
     }
 
     private void initializeDummyUsers(){
         dummyUsers.add(new User("Anthony Di Biaggio", this.dummyUsers));
+        dummyUsers.get(0).setAvail(0);
+        dummyUsers.get(0).setAvail(3);
+        dummyUsers.get(0).setAvail(10);
         dummyUsers.add(new User("Roshina Rafee", this.dummyUsers));
+        dummyUsers.get(1).setAvail(0);
         dummyUsers.add(new User("Bharti Devi", this.dummyUsers));
         dummyUsers.add(new User("Michael Allrich", this.dummyUsers));
         dummyUsers.add(new User("James Ehresman-Tsagong", this.dummyUsers));
         dummyUsers.add(new User("Daniel Black", this.dummyUsers));
+    }
+
+    public Circle getCircle(String name){
+        for(int i = 0; i < circles.size(); i++){
+            if(circles.get(i).name.equals(name)){
+                return circles.get(i);
+            }
+        }
+        return null;
     }
 
     private void initializeFriends(){

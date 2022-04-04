@@ -39,7 +39,6 @@ public class CreateEvent extends AppCompatActivity {
         setContentView(R.layout.activity_create_event);
 
         Intent intent = getIntent();
-//
         // action bar stuff
         ActionBar actionBar = getSupportActionBar();
 

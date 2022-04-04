@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BubblePrototype">
         <activity
+            android:name=".data.availability.ViewAvailabilityActivity"
+            android:exported="false" />
+        <activity
             android:name=".home.CreateCircleActivity"
             android:exported="false" />
         <activity

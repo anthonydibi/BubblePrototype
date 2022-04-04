@@ -41,8 +41,10 @@ public class AvailabilityActivity extends AppCompatActivity {
                         view.setBackgroundResource(R.drawable.grey_blocks);
                         application.avail.setUserAvail(idx, 0);
                     } else {
+                        System.out.println("Set " + idx + " to 1");
                         view.setBackgroundResource(R.drawable.green_blocks);
                         application.avail.setUserAvail(idx, 1);
+                        System.out.println(application.avail.userAvail[idx]);
                     }
                 }
             });

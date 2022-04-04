@@ -11,6 +11,7 @@ import com.example.bubbleprototype.PlanInfo;
 import com.example.bubbleprototype.R;
 import com.example.bubbleprototype.RecyclerViewActionListener;
 import com.example.bubbleprototype.TagsAdapter;
+import com.example.bubbleprototype.data.availability.ViewAvailabilityActivity;
 import com.example.bubbleprototype.data.model.BubbleApplication;
 import com.example.bubbleprototype.data.model.Circle;
 
@@ -20,6 +21,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -69,7 +71,7 @@ public class TodoActivity extends AppCompatActivity implements RecyclerViewActio
             }
             //System.out.pr
             for (int i = 0; i < circle.events.size(); i++) {
-                eventList.add(circle.events.get(i).title + " @ " + circle.events.get(i).loc);
+                eventList.add(circle.events.get(i).datetime + ": " + circle.events.get(i).title + " @ " + circle.events.get(i).loc);
             }
         }
         TagsAdapter adapter = new TagsAdapter(eventList, this);
@@ -132,5 +134,12 @@ public class TodoActivity extends AppCompatActivity implements RecyclerViewActio
         intent4.putExtra("circle", message);
         intent4.putExtra("top", "");
         startActivity(intent4);
+    }
+
+    public void viewAvail(View view){
+        String message = currCircle;
+        Intent intent = new Intent(this, ViewAvailabilityActivity.class);
+        intent.putExtra("circle", message);
+        startActivity(intent);
     }
 }
