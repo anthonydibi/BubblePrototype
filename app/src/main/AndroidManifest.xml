@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BubblePrototype">
         <activity
+            android:name=".data.availability.ViewAvailabilityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.CreateCircleActivity"
+            android:exported="false" />
+        <activity
             android:name=".data.todo.TodoActivity"
             android:exported="false" />
         <activity
@@ -28,16 +34,35 @@
             android:name=".PlanInfo"
             android:exported="false" />
         <activity
+            android:name=".data.availability.AvailabilityActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.login.LoginActivity"
             android:exported="true"
             android:label="@string/app_name">
->>>>>>> e96a65ba6d8d29f8582808b04726676563af8887
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".BubbleColab"
+            android:parentActivityName=".data.todo.TodoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".data.todo.TodoActivity" />
+        </activity>
+        <activity
+            android:name=".Chat"
+            android:parentActivityName=".BubbleColab">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BubbleColab" />
+        </activity>
+        <activity
+            android:name=".CreateEvent"
+            android:exported="false" />
     </application>
 
 </manifest>

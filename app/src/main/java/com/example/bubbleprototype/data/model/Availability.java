@@ -2,6 +2,7 @@ package com.example.bubbleprototype.data.model;
 
 import android.util.Log;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Availability {
@@ -9,9 +10,18 @@ public class Availability {
 
     public Availability(){
         this.userAvail = new int[35];
+        for(int i = 0; i < 35;  i++){
+            this.userAvail[i] = 0;
+        }
     }
 
-    public static float[] merge(List<int[]> avails) {
+    public void setUserAvail(int idx, int val){
+        this.userAvail[idx] = val;
+    }
+
+    public int[] getUserAvail() {return this.userAvail;}
+
+    public static float[] merge(ArrayList<int[]> avails) {
         int firstLength = avails.get(0).length;
         for (int[] ls : avails) {
             if (firstLength != ls.length) {

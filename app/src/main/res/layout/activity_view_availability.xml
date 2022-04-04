@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".data.availability.AvailabilityActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="400dp"
+        android:layout_height="490dp"
+        android:layout_margin="16dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/rowDates"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/m1"
+                android:textAlignment="center"
+                android:textColor="#673AB7"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/sun"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/date2"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:tag="dateLabel1"
+                android:text="@string/mon"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/date3"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/tue"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/date4"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/wed"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/date5"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/thu"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/date6"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/fri"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/date7"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/sat"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowFill1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/time1"
+                android:layout_width="75dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/time1"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/block1"
+                android:tag="1"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block2"
+                android:tag="2"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block3"
+                android:tag="3"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block4"
+                android:tag="4"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block5"
+                android:tag="5"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block6"
+                android:tag="6"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block7"
+                android:tag="7"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowFill2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/time2"
+                android:layout_width="75dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/time2"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/block8"
+                android:tag="8"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block9"
+                android:tag="9"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block10"
+                android:tag="10"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block11"
+                android:tag="11"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block12"
+                android:tag="12"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block13"
+                android:tag="13"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block14"
+                android:tag="14"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowFill3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/time3"
+                android:layout_width="75dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/time3"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/block15"
+                android:tag="15"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block16"
+                android:tag="16"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block17"
+                android:tag="17"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block18"
+                android:tag="18"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block19"
+                android:tag="19"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block20"
+                android:tag="20"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block21"
+                android:tag="21"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowFill4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/time4"
+                android:layout_width="75dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/time4"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/block22"
+                android:tag="22"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block23"
+                android:tag="23"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block24"
+                android:tag="24"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block25"
+                android:tag="25"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block26"
+                android:tag="26"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block27"
+                android:tag="27"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block28"
+                android:tag="28"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowFill5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/time5"
+                android:layout_width="75dp"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/time5"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/block29"
+                android:tag="29"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block30"
+                android:tag="30"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block31"
+                android:tag="31"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block32"
+                android:tag="32"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block33"
+                android:tag="33"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block34"
+                android:tag="34"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/block35"
+                android:tag="35"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_blocks"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textAlignment="center"
+                android:clickable="true"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/availInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select times where you are available"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

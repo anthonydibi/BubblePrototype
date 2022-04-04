@@ -10,6 +10,9 @@ public class User {
     public User(String name, List<User> dummyUsers){
         this.name = name;
         avail = new int[35];
+        for(int i = 0; i < 35; i++){
+            avail[i] = 0;
+        }
         this.index = dummyUsers.size() - 1;
     }
 
