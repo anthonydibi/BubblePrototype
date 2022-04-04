@@ -68,6 +68,7 @@ public class HomeFragment extends Fragment implements RecyclerViewActionListener
         switch (clickedViewId) {
             case R.id.chipView:
                 Intent intent = new Intent(requireActivity(), TodoActivity.class);
+                application.curCircle = text;
                 intent.putExtra("circle", text);
                 startActivity(intent);
                 break;
@@ -80,6 +81,7 @@ public class HomeFragment extends Fragment implements RecyclerViewActionListener
             case R.id.chipView:
                 // Application logic when whole item long-clicked
                 Intent intent = new Intent(requireActivity(), TodoActivity.class);
+                application.curCircle = text;
                 intent.putExtra("circle", text);
                 startActivity(intent);
                 break;

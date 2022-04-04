@@ -49,18 +49,13 @@ public class BubbleColab extends AppCompatActivity {
 
         // action bar stuff
         ActionBar actionBar = getSupportActionBar();
-
-        actionBar.setTitle("Colab:" + intent.getStringExtra(TodoActivity.EXTRA_MESSAGE));
 //        actionBar.setTitle("Colab: " + intent.getStringExtra("circle"));
 
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 
         app = ((BubbleApplication) this.getApplication());
-        String message = intent.getStringExtra(TodoActivity.EXTRA_MESSAGE);
-        if (message != null) {
-            app.curCircle = message;
-        }
+        actionBar.setTitle("Colab:" + app.curCircle);
         bubbleList = new ArrayList<>();
 //        for (int i = 0; i < app.circles.size(); i++) {
 //            if (message.equals(app.circles.get(i).name)) {
@@ -77,7 +72,7 @@ public class BubbleColab extends AppCompatActivity {
 //      //setup adapter for recycler view
         recyclerView = findViewById(R.id.recyclerbubbles);
         layoutManager = new LinearLayoutManager(this);
-        adapter = new BubbleAdapter(app.circles.get(0).colab.bubbles);
+        adapter = new BubbleAdapter(testcircle.colab.bubbles);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
         recyclerView.addItemDecoration(new DividerItemDecoration(this,
