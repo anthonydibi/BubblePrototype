@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bubbleprototype.BubbleColab;
 import com.example.bubbleprototype.Chat;
+import com.example.bubbleprototype.PlanInfo;
 import com.example.bubbleprototype.R;
 import com.example.bubbleprototype.RecyclerViewActionListener;
 import com.example.bubbleprototype.TagsAdapter;
@@ -93,8 +94,10 @@ public class TodoActivity extends AppCompatActivity implements RecyclerViewActio
     @Override
     public void onViewClicked(int clickedViewId, int clickedItemPosition, String text) {
         switch (clickedViewId) {
-            case R.id.chipTextView:
-                Intent intent = new Intent(this, TodoActivity.class);
+            case R.id.chipView:
+                Intent intent = new Intent(this, PlanInfo.class);
+                intent.putExtra("circle", currCircle);
+                intent.putExtra("eventTitle", text);
                 startActivity(intent);
                 break;
         }
@@ -102,9 +105,11 @@ public class TodoActivity extends AppCompatActivity implements RecyclerViewActio
 
     public void onViewLongClicked(int clickedViewId, int clickedItemPosition, String text) {
         switch (clickedViewId){
-            case R.id.chipTextView:
+            case R.id.chipView:
                 // Application logic when whole item long-clicked
-                Intent intent = new Intent(this, TodoActivity.class);
+                Intent intent = new Intent(this, PlanInfo.class);
+                intent.putExtra("circle", currCircle);
+                intent.putExtra("eventTitle", text);
                 startActivity(intent);
                 break;
         }

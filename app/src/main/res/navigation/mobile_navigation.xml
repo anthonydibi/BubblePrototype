@@ -20,6 +20,6 @@
         android:name="com.example.bubbleprototype.data.todo.TodoActivity" />
 
     <activity
-        android:id="@+id/nav_test2"
-        android:name="com.example.bubbleprototype.TestActivity2" />
+        android:id="@+id/nav_editavail"
+        android:name="com.example.bubbleprototype.data.availability.AvailabilityActivity" />
 </navigation>

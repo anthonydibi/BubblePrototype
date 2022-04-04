@@ -1,6 +1,8 @@
 package com.example.bubbleprototype.data.availability;
 
 import android.graphics.drawable.Drawable;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TableLayout;
@@ -54,7 +56,22 @@ public class AvailabilityActivity extends AppCompatActivity {
                 openDialog();
             }
         });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 
     public void openDialog(){

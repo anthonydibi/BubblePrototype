@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BubblePrototype">
         <activity
+            android:name=".home.CreateCircleActivity"
+            android:exported="false" />
+        <activity
             android:name=".data.todo.TodoActivity"
             android:exported="false" />
         <activity
@@ -42,19 +45,18 @@
         </activity>
         <activity
             android:name=".BubbleColab"
-            android:parentActivityName=".data.todo.TodoActivity" >
+            android:parentActivityName=".data.todo.TodoActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".data.todo.TodoActivity"/>
+                android:value=".data.todo.TodoActivity" />
         </activity>
         <activity
             android:name=".Chat"
-            android:parentActivityName=".BubbleColab" >
+            android:parentActivityName=".BubbleColab">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".BubbleColab"/>
+                android:value=".BubbleColab" />
         </activity>
-
     </application>
 
 </manifest>
