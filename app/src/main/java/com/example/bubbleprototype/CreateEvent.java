@@ -60,7 +60,7 @@ public class CreateEvent extends AppCompatActivity {
     }
 
     public void createEvent(View view) {
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, TodoActivity.class);
         EditText titleText = (EditText) findViewById(R.id.enterTitle);
         String title = titleText.getText().toString();
 

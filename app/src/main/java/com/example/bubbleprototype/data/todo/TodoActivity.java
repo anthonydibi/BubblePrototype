@@ -45,7 +45,7 @@ public class TodoActivity extends AppCompatActivity implements RecyclerViewActio
         }
         //System.out.println("Circle: " + this.currCircle);
         application = (BubbleApplication) getApplication();
-
+        application.curCircle = this.currCircle;
         recyclerView = (RecyclerView) findViewById(R.id.eventsview);
         recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setHasFixedSize(false);
