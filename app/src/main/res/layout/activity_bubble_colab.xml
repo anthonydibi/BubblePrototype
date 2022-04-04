@@ -9,7 +9,7 @@
 
 
     <EditText
-        android:id="@+id/enterBubble"
+        android:id="@+id/enterTitle"
         android:layout_width="253dp"
         android:layout_height="47dp"
         android:layout_marginTop="16dp"
@@ -29,7 +29,7 @@
         android:layout_marginTop="16dp"
         android:onClick="createBubble"
         android:text="Create"
-        app:layout_constraintStart_toEndOf="@+id/enterBubble"
+        app:layout_constraintStart_toEndOf="@+id/enterTitle"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView

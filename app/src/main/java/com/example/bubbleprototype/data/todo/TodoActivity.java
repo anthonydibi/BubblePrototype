@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bubbleprototype.BubbleColab;
 import com.example.bubbleprototype.Chat;
+import com.example.bubbleprototype.CreateEvent;
 import com.example.bubbleprototype.PlanInfo;
 import com.example.bubbleprototype.R;
 import com.example.bubbleprototype.RecyclerViewActionListener;
@@ -122,5 +123,14 @@ public class TodoActivity extends AppCompatActivity implements RecyclerViewActio
         String message = currCircle;
         intent2.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent2);
+    }
+
+    public void createEvent(View view) {
+        String message = currCircle;
+
+        Intent intent4 = new Intent(this, CreateEvent.class);
+        intent4.putExtra("circle", message);
+        intent4.putExtra("top", "");
+        startActivity(intent4);
     }
 }

@@ -7,9 +7,8 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.EditText;
-import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -21,11 +20,9 @@ import android.widget.Toast;
 import com.example.bubbleprototype.data.model.Bubble;
 import com.example.bubbleprototype.data.model.BubbleApplication;
 import com.example.bubbleprototype.data.model.Circle;
-import com.example.bubbleprototype.data.model.Colab;
 import com.example.bubbleprototype.data.todo.TodoActivity;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class BubbleColab extends AppCompatActivity {
@@ -158,7 +155,7 @@ public class BubbleColab extends AppCompatActivity {
     }
 
     public void createBubble(View view) {
-        EditText enterIdea = (EditText) findViewById(R.id.enterBubble);
+        EditText enterIdea = (EditText) findViewById(R.id.enterTitle);
         String idea = enterIdea.getText().toString();
         if (!idea.equals("")) {
             testcircle.colab.bubbles.add(0,new Bubble((idea)));
@@ -185,9 +182,18 @@ public class BubbleColab extends AppCompatActivity {
                 }
             }
 
-            Toast.makeText(BubbleColab.this, "largest: " + testcircle.colab.bubbles.get(largest).idea +
-                    " with " + testcircle.colab.bubbles.get(largest).votes +
-                    " votes", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(BubbleColab.this, "largest: " + testcircle.colab.bubbles.get(largest).idea +
+//                    " with " + testcircle.colab.bubbles.get(largest).votes +
+//                    " votes", Toast.LENGTH_SHORT).show();
+
+            Intent intent4 = new Intent(this, CreateEvent.class);
+//            Intent intent3 = getIntent();
+//            String message = intent3.getStringExtra(TodoActivity.EXTRA_MESSAGE);
+            String message = app.curCircle;
+            intent4.putExtra("circle", message);
+            intent4.putExtra("top", testcircle.colab.bubbles.get(largest).idea);
+            startActivity(intent4);
+
         }
 
 

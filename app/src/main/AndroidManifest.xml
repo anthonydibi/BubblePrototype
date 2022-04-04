@@ -57,6 +57,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".BubbleColab" />
         </activity>
+        <activity
+            android:name=".CreateEvent"
+            android:exported="false" />
     </application>
 
 </manifest>
