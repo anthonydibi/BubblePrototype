@@ -58,6 +58,7 @@ public class PlanInfo extends AppCompatActivity {
                     circle.events.remove(planIndex);
                 }
                 Intent intent = new Intent(PlanInfo.this, HomeActivity.class);
+                application.curCircle = "";
                 startActivity(intent);
             }
         });
