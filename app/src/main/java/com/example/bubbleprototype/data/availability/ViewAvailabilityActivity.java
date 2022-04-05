@@ -35,7 +35,7 @@ public class ViewAvailabilityActivity extends AppCompatActivity {
         ArrayList<int[]> avails = new ArrayList<>();
         avails.add(application.avail.userAvail);
         for(int i = 0; i < circle.members.size(); i++){
-            avails.add(application.dummyUsers.get(circle.members.get(i)).avail);
+            avails.add(application.dummyUsers.get(application.friends.get(circle.members.get(i))).avail);
         }
         float[] mergedAvail = Availability.merge(avails);
         for(int i = 0; i < mergedAvail.length; i++){

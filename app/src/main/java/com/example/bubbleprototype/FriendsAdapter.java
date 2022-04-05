@@ -19,6 +19,7 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.TagsView
     ArrayList<Integer> arrayList;
     private RecyclerViewFriendsActionListener mListener;
     private BubbleApplication application;
+    private static int friendIndex = 0;
 
     public FriendsAdapter(RecyclerViewFriendsActionListener mListener, BubbleApplication application) {
         this.mListener = mListener;
@@ -35,26 +36,26 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.TagsView
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mListener.onViewClicked(view.getId(), holder.getAdapterPosition(), holder.index, view);
+                mListener.onViewClicked(view.getId(), holder.getAdapterPosition(), Integer.parseInt(holder.indexHack.getText().toString()), view);
             }
         });
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mListener.onViewClicked(view.getId(), holder.getAdapterPosition(), holder.index, view);
+                mListener.onViewClicked(view.getId(), holder.getAdapterPosition(), Integer.parseInt(holder.indexHack.getText().toString()), view);
             }
         });
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mListener.onViewClicked(view.getId(), holder.getAdapterPosition(), holder.index, view);
+                mListener.onViewClicked(view.getId(), holder.getAdapterPosition(), Integer.parseInt(holder.indexHack.getText().toString()), view);
             }
         });
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
                 //System.out.println(holder.tagText.getText());
-                mListener.onViewLongClicked(view.getId(), holder.getAdapterPosition(), holder.index, view);
+                mListener.onViewLongClicked(view.getId(), holder.getAdapterPosition(), Integer.parseInt(holder.indexHack.getText().toString()), view);
                 return false;
             }
         });
@@ -65,7 +66,7 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.TagsView
     public void onBindViewHolder(@NonNull final TagsViewHolder holder, final int position) {
         String text = application.dummyUsers.get(application.friends.get(position)).name;
         holder.tagText.setText(text);
-        holder.index = application.friends.get(position);
+        holder.indexHack.setText(Integer.toString(position));
     }
 
     @Override
@@ -76,11 +77,11 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.TagsView
     public class TagsViewHolder extends RecyclerView.ViewHolder {
         public TextView tagText;
         public RelativeLayout itemView;
-        public int index;
+        public TextView indexHack;
 
         public TagsViewHolder(View view) {
             super(view);
-            index = 0;
+            indexHack = view.findViewById(R.id.indexHack);
             tagText = view.findViewById(R.id.chipTextView);
             itemView = view.findViewById(R.id.chipView);
         }

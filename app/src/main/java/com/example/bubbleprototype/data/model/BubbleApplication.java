@@ -36,12 +36,40 @@ public class BubbleApplication extends Application {
         dummyUsers.get(0).setAvail(0);
         dummyUsers.get(0).setAvail(3);
         dummyUsers.get(0).setAvail(10);
+        dummyUsers.get(0).setAvail(11);
+        dummyUsers.get(0).setAvail(13);
+        dummyUsers.get(0).setAvail(22);
         dummyUsers.add(new User("Roshina Rafee", this.dummyUsers));
         dummyUsers.get(1).setAvail(0);
+        dummyUsers.get(1).setAvail(5);
+        dummyUsers.get(1).setAvail(3);
+        dummyUsers.get(1).setAvail(12);
+        dummyUsers.get(1).setAvail(15);
+        dummyUsers.get(1).setAvail(18);
+        dummyUsers.get(1).setAvail(25);
         dummyUsers.add(new User("Bharti Devi", this.dummyUsers));
+        dummyUsers.get(2).setAvail(0);
+        dummyUsers.get(2).setAvail(5);
+        dummyUsers.get(2).setAvail(3);
+        dummyUsers.get(2).setAvail(12);
+        dummyUsers.get(2).setAvail(17);
+        dummyUsers.get(2).setAvail(18);
+        dummyUsers.get(2).setAvail(29);
         dummyUsers.add(new User("Michael Allrich", this.dummyUsers));
+        dummyUsers.get(3).setAvail(30);
+        dummyUsers.get(3).setAvail(31);
+        dummyUsers.get(3).setAvail(32);
+        dummyUsers.get(3).setAvail(0);
         dummyUsers.add(new User("James Ehresman-Tsagong", this.dummyUsers));
+        dummyUsers.get(4).setAvail(0);
+        dummyUsers.get(4).setAvail(1);
+        dummyUsers.get(4).setAvail(2);
+        dummyUsers.get(4).setAvail(3);
         dummyUsers.add(new User("Daniel Black", this.dummyUsers));
+        dummyUsers.get(5).setAvail(5);
+        dummyUsers.get(5).setAvail(4);
+        dummyUsers.get(5).setAvail(10);
+        dummyUsers.get(5).setAvail(11);
     }
 
     public Circle getCircle(String name){

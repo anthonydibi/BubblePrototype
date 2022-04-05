@@ -80,6 +80,7 @@ public class CreateCircleActivity extends AppCompatActivity implements RecyclerV
     public void onViewClicked(int clickedViewId, int clickedItemPosition, int index, View view) {
         switch (clickedViewId) {
             case R.id.chipView:
+                System.out.println(index);
                 friendsSelected.add(index);
                 int color = Color.parseColor("#00FF00");
                 view.setBackgroundColor(color);
